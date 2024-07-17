@@ -1,0 +1,100 @@
+/* Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+/* Apply a basic box-sizing rule */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Set the base font size and family */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Style the header */
+header {
+    background-color: #f0e68c; /* Light brown (khaki) */
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Style the main content area */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.menu-container {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-container h2 {
+    background-color: #556b2f; /* Olive green */
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.menu-section {
+    margin-bottom: 2rem;
+}
+
+.menu-section h3 {
+    color: #556b2f; /* Olive green */
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #556b2f;
+}
+
+.menu-section h4 {
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu-section p {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+}
+
+/* Style the footer */
+footer {
+    background-color: #556b2f; /* Olive green */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Make the site responsive */
+@media (max-width: 768px) {
+    main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
