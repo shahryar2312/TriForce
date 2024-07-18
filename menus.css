@@ -16,6 +16,8 @@ body {
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
+    background-image: url(./images/Background0.1.png);
+    background-size: contain;
 }
 
 /* Style the header */
