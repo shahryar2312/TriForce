@@ -64,40 +64,10 @@ main {
     padding: 0 1rem;
 }
 
-.menu-container {
+.voucher-container {
     background-color: #fff;
     padding: 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.menu-container h2 {
-    background-color: #556b2f; /* Olive green */
-    color: #fff;
-    padding: 0.5rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.menu-section {
-    margin-bottom: 2rem;
-}
-
-.menu-section h3 {
-    color: #556b2f; /* Olive green */
-    margin-bottom: 0.5rem;
-    border-bottom: 2px solid #556b2f;
-}
-
-.menu-section h4 {
-    color: #333;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.menu-section p {
-    padding: 0.5rem;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 0.5rem;
 }
 
 /* Style the footer */
@@ -106,7 +76,10 @@ footer {
     color: #fff;
     text-align: center;
     padding: 2rem 1rem;
-    margin-top: 2rem;
+    clear: both;
+    /* height: 200px;
+    margin-top: -200px; */
+
 }
 
 footer p {
