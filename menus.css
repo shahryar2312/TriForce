@@ -102,11 +102,11 @@ main {
 
 /* Style the footer */
 footer {
-    background-color: #556b2f; /* Olive green */
+    background-color: #333333; /* Olive green */
     color: #fff;
     text-align: center;
     padding: 2rem 1rem;
-    margin-top: 2rem;
+    border-top: 1px solid #fff;
 }
 
 footer p {

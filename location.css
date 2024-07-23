@@ -15,9 +15,11 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f9f9f9;
-    color: #333;
+    color: #ffffff;
+    text-align: center;
     background-image: url(./images/Background1.1.png);
     background-size: contain;
+    background-position-x: center;
 }
 
 /* Style the header */
@@ -64,10 +66,8 @@ main {
     padding: 0 1rem;
 }
 
-.voucher-container {
-    background-color: #fff;
-    padding: 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.Location p {
+    padding-bottom: 1rem;
 }
 
 /* Style the footer */
@@ -78,7 +78,6 @@ footer {
     padding: 2rem 1rem;
     border-top: 1px solid #fff;
 }
-
 
 footer p {
     margin: 0.5rem 0;
