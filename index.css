@@ -18,12 +18,11 @@ body {
     color: #333;
     background-image: url(./images/Background1.1.png);
     background-size: contain;
-    background-position-x: center;
 }
 
 /* Style the header */
 header {
-    background-color: #000000; /* Light brown (khaki) */
+    background-color: #000000;
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
     padding: 0;
@@ -40,11 +39,12 @@ header ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;}
+    background-color: #333333;
+}
 
 header li {
     float: left;
-  }
+}
 
 header li a {
     display: block;
@@ -56,7 +56,7 @@ header li a {
 
 header li a:hover {
     background-color: #111111;
-  }
+}
 
 /* Style the main content area */
 main {
@@ -65,17 +65,50 @@ main {
     padding: 0 1rem;
 }
 
-.images {
-    text-align: center;
+.gallery-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.gallery-wrapper {
+    overflow: hidden;
+    width: 80%;
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery img {
+    width: 100%; /* Ensure images fit within their container */
+    height: auto;
 }
 
 /* Style the footer */
 footer {
-    background-color: #556b2f; /* Olive green */
+    background-color: #333333;
     color: #fff;
     text-align: center;
     padding: 2rem 1rem;
-    margin-top: 2rem;
+    border-top: 1px solid #fff;
 }
 
 footer p {
@@ -92,4 +125,73 @@ footer p {
     footer {
         padding: 1rem;
     }
+}
+
+/* Style for swiper notification */
+.swiper-notification {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Style for homepage banner titles */
+.homepage_banner_titles {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    z-index: 9;
+}
+
+.homepage_banner_titles h1, .homepage_banner_titles p {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Outline effect */
+}
+
+.holds-banner-buttons .spit_button.white {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.holds-banner-buttons .spit_button.white:hover {
+    background-color: #ddd;
+}
+
+/* Styles for the container and boxes */
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: 100%;
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
 }
