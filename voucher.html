@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ambroise</title>
+    <title>Ambroise - Voucher</title>
     <link rel="stylesheet" href="voucher.css">
 </head>
 <body>
@@ -23,50 +23,33 @@
     </header>
     <main>
         <div class="voucher-container">
-            <div>
-                <label for="uname">Enter your code: </label>
-                <input
-                type="text"
-                id="uname"
-                name="name"
-                size="45"
-                />
-              </div>
-              <div>
-                <button>Submit</button>
-              </div>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-
+            <h2>Claim or Buy a Voucher</h2>
+            <div class="claim-code">
+                <h3>Claim a Voucher</h3>
+                <form id="claim-form">
+                    <label for="claim-code">Enter your code:</label>
+                    <input type="text" id="claim-code" name="claim-code" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="buy-code">
+                <h3>Buy a Voucher</h3>
+                <form id="buy-form">
+                    <label for="buy-amount">Voucher Amount:</label>
+                    <select id="buy-amount" name="buy-amount" required>
+                        <option value="25">€25</option>
+                        <option value="50">€50</option>
+                        <option value="100">€100</option>
+                    </select>
+                    <button type="submit">Buy Now</button>
+                </form>
+            </div>
         </div>
     </main>
     <footer id="footer">
         <p>Contact</p>
         <p>Social</p>
-        
         <p>Opening Hours</p>
-
     </footer>
 </body>
 </html>

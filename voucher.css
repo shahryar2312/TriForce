@@ -22,7 +22,7 @@ body {
 
 /* Style the header */
 header {
-    background-color: #000000; /* Light brown (khaki) */
+    background-color: #000000;
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
     padding: 0;
@@ -39,11 +39,12 @@ header ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;}
+    background-color: #333333;
+}
 
 header li {
     float: left;
-  }
+}
 
 header li a {
     display: block;
@@ -55,7 +56,7 @@ header li a {
 
 header li a:hover {
     background-color: #111111;
-  }
+}
 
 /* Style the main content area */
 main {
@@ -70,15 +71,48 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.voucher-container h2 {
+    text-align: center;
+}
+
+.claim-code, .buy-code {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
 /* Style the footer */
 footer {
-    background-color: #333333; /* Olive green */
+    background-color: #333333;
     color: #fff;
     text-align: center;
     padding: 2rem 1rem;
     border-top: 1px solid #fff;
 }
-
 
 footer p {
     margin: 0.5rem 0;
