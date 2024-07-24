@@ -93,18 +93,29 @@ main {
     grid-column-end: 2;
 }
 
-.menu-container {
+.menu-text {
     background-color: #fff;
     padding: 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.menu-container h2 {
+.menu-text h2 {
     background-color: #556b2f; /* Olive green */
     color: #fff;
     padding: 0.5rem;
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.menu-container {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: fit-content(550px) 1fr;
+    grid-gap: 2rem;
 }
 
 .menu-section {
@@ -130,6 +141,24 @@ main {
 
 .description {
     border-bottom: 2px solid #1a1a1a;
+}
+
+#starters {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#mains {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#image {
+    margin-top: 50px;
 }
 
 /* Style the footer */
