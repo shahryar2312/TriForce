@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ambroise</title>
+    <title>Ambroise - Events</title>
+    <link rel="stylesheet" href="events.css">
 </head>
 <body>
     <header id="heading">
@@ -20,20 +21,29 @@
         </nav>
     </header>
     <main>
-        <div class="events-thing">
-            <img src="images/WhatsApp Image 2024-07-24 at 20.07.57_478063a1.jpg" alt="breakfast" class="food" >
-            <img src="images/WhatsApp Image 2024-07-24 at 20.07.57_0c387cca.jpg" alt="dinner" class="food">
-            <img src="images/WhatsApp Image 2024-07-24 at 20.07.57_eef1cd1e.jpg" alt="special-dinner" class="food">
-            <img src="images/WhatsApp Image 2024-07-24 at 20.07.58_b24efba1.jpg " alt="special-lunch" class="food">
+        <div class="gallery-container">
+            <div class="homepage_banner_titles">
+                <h1 id="slidertitle">Dinner and Brunch</h1>
+                <p id="slideraftertitle">Using Only The Finest Local Ingredients</p><br>
+            </div>
+            <button id="prev" class="nav-button">❮</button>
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <img src="images/WhatsApp Image 2024-07-24 at 20.07.57_478063a1.jpg" alt="breakfast">
+                    <img src="images/WhatsApp Image 2024-07-24 at 20.07.57_0c387cca.jpg" alt="dinner">
+                    <img src="images/WhatsApp Image 2024-07-24 at 20.07.57_eef1cd1e.jpg" alt="special-dinner">
+                    <img src="images/WhatsApp Image 2024-07-24 at 20.07.58_b24efba1.jpg" alt="special-lunch">
+                </div>
+            </div>
+            <button id="next" class="nav-button">❯</button>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
         </div>
-
     </main>
     <footer id="footer">
         <p>Contact</p>
         <p>Social</p>
-        
         <p>Opening Hours</p>
-
     </footer>
+    <script src="events.js"></script>
 </body>
 </html>
