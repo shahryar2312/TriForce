@@ -71,6 +71,38 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+}
+
+.gallery-wrapper {
+    overflow: hidden;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.box {
+    flex: 0 0 300px;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 5px;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.box:hover {
+    flex: 0 0 400px;
 }
 
 .nav-button {
@@ -81,25 +113,21 @@ main {
     padding: 10px;
     cursor: pointer;
     z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .nav-button:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.gallery-wrapper {
-    overflow: hidden;
-    width: 80%;
+#prev {
+    left: 10px;
 }
 
-.gallery {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.gallery img {
-    width: 100%; /* Ensure images fit within their container */
-    height: auto;
+#next {
+    right: 10px;
 }
 
 /* Style the footer */
@@ -122,21 +150,26 @@ footer p {
         padding: 1rem;
     }
 
+    .gallery-wrapper {
+        width: 90%;
+    }
+
+    .box {
+        flex: 0 0 200px;
+    }
+
+    .box:hover {
+        flex: 0 0 250px;
+    }
+
+    .nav-button {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
     footer {
         padding: 1rem;
     }
-}
-
-/* Style for swiper notification */
-.swiper-notification {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
 }
 
 /* Style for homepage banner titles */
@@ -151,47 +184,4 @@ footer p {
 .homepage_banner_titles h1, .homepage_banner_titles p {
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Outline effect */
-}
-
-.holds-banner-buttons .spit_button.white {
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.holds-banner-buttons .spit_button.white:hover {
-    background-color: #ddd;
-}
-
-/* Styles for the container and boxes */
-.container {
-  display: flex;
-  width: 100%;
-  padding: 4% 2%;
-  box-sizing: border-box;
-  height: 100vh;
-}
-
-.box {
-  flex: 1;
-  overflow: hidden;
-  transition: .5s;
-  margin: 0 2%;
-  box-shadow: 0 20px 30px rgba(0,0,0,.1);
-  line-height: 0;
-}
-
-.box > img {
-  width: 200%;
-  height: 100%;
-  object-fit: cover; 
-  transition: .5s;
-}
-
-.box:hover { flex: 1 1 50%; }
-.box:hover > img {
-  width: 100%;
-  height: 100%;
 }
