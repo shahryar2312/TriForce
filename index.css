@@ -5,6 +5,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl,
     font-weight: normal;
 }
 
+html,body{
+    overflow-x: hidden;
+}
+
 /* Apply a basic box-sizing rule */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -17,7 +21,7 @@ body {
     background-color: #f9f9f9;
     color: #333;
     background-image: url(./images/Background1.1.png);
-    background-size: contain;
+    /* background-size: contain; */
 }
 
 /* Style the header */
@@ -89,6 +93,8 @@ main {
 }
 
 .gallery {
+    /* position: absolute; */
+    z-index: 100;
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
@@ -96,7 +102,7 @@ main {
 .box {
     flex: 0 0 600px;
     overflow: hidden;
-    transition: .5s;
+    transition: .1s;
     margin: 0 5px;
     box-shadow: 0 20px 30px rgba(0,0,0,.1);
     line-height: 0;
@@ -107,6 +113,9 @@ main {
     height: 700px;
     object-fit: cover;
     transition: .5s;
+    flex-shrink: 0;
+    position: relative;
+    object-fit: cover;
 }
 
 .box:hover {
@@ -155,7 +164,7 @@ footer p {
 }
 
 /* Make the site responsive */
-@media (max-width: 768px) {
+@media (max-width: 412px) {
     main {
         margin: 1rem;
         padding: 1rem;
@@ -166,11 +175,7 @@ footer p {
     }
 
     .box {
-        flex: 0 0 200px;
-    }
-
-    .box:hover {
-        flex: 0 0 250px;
+        flex: 0 0 300px;
     }
 
     .nav-button {
