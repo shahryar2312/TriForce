@@ -24,7 +24,7 @@ body {
 
 /* Style the header */
 header {
-    background-color: #000000; /* Light brown (khaki) */
+    background-color: #000000;
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
     padding: 0;
@@ -41,13 +41,16 @@ header ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;}
+    background-color: #333333;
+}
 
 header li {
     float: left;
-  }
+    margin-left: 30px;
+}
 
-header li a {
+.menu-list li a{
+    margin-left: 20px;
     display: block;
     color: white;
     text-align: center;
@@ -55,9 +58,9 @@ header li a {
     text-decoration: none;
 }
 
-header li a:hover {
+.menu-list li :hover {
     background-color: #111111;
-  }
+}
 
 /* Style the main content area */
 main {
@@ -89,6 +92,9 @@ footer {
     text-align: center;
     padding: 2rem 1rem;
     border-top: 1px solid #fff;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer p {

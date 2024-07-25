@@ -49,6 +49,13 @@ header li {
     margin-left: 30px;
 }
 
+/* Style the main content area */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
 .menu-list li a{
     margin-left: 20px;
     display: block;
@@ -62,68 +69,15 @@ header li {
     background-color: #111111;
 }
 
-/* Style the main content area */
-main {
-    max-width: 1100px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    text-align: center;
+.text {
+    background-color: #fff;
+    color: #000000;
+    padding: 16px;
+    border-radius: 20px;
 }
 
-.name {
-    background-color: #222222;
-    margin: 0;
-    padding: 16px;
-    overflow: hidden;
-}
-
-.email {
-    background-color: #222222;
-    margin: 0;
-    padding: 16px;
-    overflow: hidden;
-}
-
-.phone {
-    background-color: #222222;
-    margin: 0;
-    padding: 16px;
-    overflow: hidden;
-}
-
-.date {
-    background-color: #222222;
-    margin: 0;
-    padding: 16px;
-    overflow: hidden;
-}
-
-.time {
-    background-color: #222222;
-    margin: 0;
-    padding: 16px;
-    overflow: hidden;
-}
-
-.guests {
-    background-color: #222222;
-    margin: 0;
-    padding: 16px;
-    overflow: hidden;
-}
-
-.message {
-    background-color: #222222;
-    margin: 0;
-    padding: 16px;
-    overflow: hidden;
-}
-
-.submit  {
-    background-color: #222222;
-    margin: 0;
-    padding: 16px;
-    overflow: hidden;
+.text p {
+    padding: 50px 50px;
 }
 /* Style the footer */
 footer {
