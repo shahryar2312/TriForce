@@ -5,6 +5,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl,
     font-weight: normal;
 }
 
+html,body{
+    overflow-x: hidden;
+}
+
 /* Apply a basic box-sizing rule */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -16,8 +20,8 @@ body {
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
-    background-image: url(./images/Background1.1.png);
-    background-size: contain;
+    background-image: url(../images/Background1.1.png);
+    /* background-size: contain; */
 }
 
 /* Style the header */
@@ -61,16 +65,7 @@ header ul li img {
     text-decoration: none;
 }
 
-.menu-list li a{
-    margin-left: 20px;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-.menu-list li :hover {
+.menu-list :hover {
     background-color: #111111;
 }
 
@@ -81,49 +76,84 @@ main {
     padding: 0 1rem;
 }
 
-.voucher-container {
-    background-color: #fff;
+.text {
+    margin-top: 30px;
+    background-color: #ddd;
     padding: 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.voucher-container h2 {
-    text-align: center;
+.gallery-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.claim-code, .buy-code {
-    margin-bottom: 20px;
+.gallery-wrapper {
+    overflow: hidden;
+    width: 1300px;
+    max-width: 1700px;
 }
 
-label {
-    display: block;
-    margin-bottom: 8px;
+.gallery {
+    /* position: absolute; */
+    z-index: 100;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
-input[type="text"], select {
+.box {
+    flex: 0 0 600px;
+    overflow: hidden;
+    transition: .1s;
+    margin: 0 5px;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+}
+
+.box img {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    height: 700px;
+    object-fit: cover;
+    transition: .5s;
+    flex-shrink: 0;
+    position: relative;
+    object-fit: cover;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #333;
+.box:hover {
+    flex: 0 0 1000px;
+}
+
+.nav-button {
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    border-radius: 4px;
+    font-size: 2rem;
+    padding: 10px;
     cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-button:hover {
-    background-color: #555;
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
 }
 
 /* Style the footer */
 footer {
-    margin-top: 220px;
     background-color: #333333; /* Olive green */
     color: #fff;
     text-align: center;
@@ -144,10 +174,23 @@ footer p {
 }
 
 /* Make the site responsive */
-@media (max-width: 768px) {
+@media (max-width: 412px) {
     main {
         margin: 1rem;
         padding: 1rem;
+    }
+
+    .gallery-wrapper {
+        width: 90%;
+    }
+
+    .box {
+        flex: 0 0 300px;
+    }
+
+    .nav-button {
+        font-size: 1.5rem;
+        padding: 5px;
     }
 
     footer {
@@ -155,41 +198,16 @@ footer p {
     }
 }
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+/* Style for homepage banner titles */
+.homepage_banner_titles {
+    position: absolute;
+    top: 5%;
+    width: 100%;
     text-align: center;
+    z-index: 9;
 }
 
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+.homepage_banner_titles h1, .homepage_banner_titles p {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Outline effect */
 }

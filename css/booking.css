@@ -17,7 +17,7 @@ body {
     background-color: #f9f9f9;
     color: #ffffff;
     text-align: center;
-    background-image: url(./images/Background1.1.png);
+    background-image: url(../images/Background1.1.png);
     background-size: contain;
     background-position-x: center;
 }
@@ -63,13 +63,6 @@ header ul li img {
     text-decoration: none;
 }
 
-/* Style the main content area */
-main {
-    max-width: 1100px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
 .menu-list li a{
     margin-left: 20px;
     display: block;
@@ -83,15 +76,68 @@ main {
     background-color: #111111;
 }
 
-.text {
-    background-color: #fff;
-    color: #000000;
-    padding: 16px;
-    border-radius: 20px;
+/* Style the main content area */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
 }
 
-.text p {
-    padding: 50px 50px;
+.name {
+    background-color: #222222;
+    margin: 0;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.email {
+    background-color: #222222;
+    margin: 0;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.phone {
+    background-color: #222222;
+    margin: 0;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.date {
+    background-color: #222222;
+    margin: 0;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.time {
+    background-color: #222222;
+    margin: 0;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.guests {
+    background-color: #222222;
+    margin: 0;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.message {
+    background-color: #222222;
+    margin: 0;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.submit  {
+    background-color: #222222;
+    margin: 0;
+    padding: 16px;
+    overflow: hidden;
 }
 /* Style the footer */
 footer {

@@ -16,7 +16,7 @@ body {
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
-    background-image: url(./images/Background1.1.png);
+    background-image: url(../images/Background1.1.png);
     background-size: contain;
 }
 
@@ -76,118 +76,54 @@ header ul li img {
 
 /* Style the main content area */
 main {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-.menu-item {
-    border-bottom: 2px solid #1a1a1a;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-}
-
-.dish-name p {
-    grid-row-start: 0;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.price {
-    text-align: right;
-    grid-row-start: 0;
-    grid-row-end: 1;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.description p {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 0;
-    grid-column-end: 2;
-}
-
-.menu-text {
+.voucher-container {
     background-color: #fff;
     padding: 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.menu-text h2 {
-    background-color: #556b2f; /* Olive green */
-    color: #fff;
-    padding: 0.5rem;
+.voucher-container h2 {
     text-align: center;
-    margin-bottom: 1rem;
 }
 
-.menu-container {
-    background-color: #fff;
-    padding: 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+.claim-code, .buy-code {
+    margin-bottom: 20px;
 }
 
-.menu-section {
-    margin-bottom: 2rem;
+label {
+    display: block;
+    margin-bottom: 8px;
 }
 
-.menu-section h3 {
-    color: #556b2f; /* Olive green */
-    margin-bottom: 0.5rem;
-    border-bottom: 2px solid #556b2f;
+input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.menu-section h4 {
-    color: #333;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.menu-section p {
-    padding: 0.5rem;
-    border-bottom: 1px solid #ddd;
-    }
-
-.description {
-    border-bottom: 2px solid #1a1a1a;
-}
-
-#starters {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-#mains {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-#steak img {
-    margin-top: 30px;
-    width: 550px;
-    height: 400px;
-}
-
-#mojito img{
-    margin-top: 30px;
-    width: 550px;
-    height: 470px;
+button:hover {
+    background-color: #555;
 }
 
 /* Style the footer */
 footer {
+    margin-top: 220px;
     background-color: #333333; /* Olive green */
     color: #fff;
     text-align: center;
@@ -217,9 +153,43 @@ footer p {
     footer {
         padding: 1rem;
     }
+}
 
-    #image {
-        width: 200px;
-        height: 150px;
-    }
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

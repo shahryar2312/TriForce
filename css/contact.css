@@ -1,0 +1,128 @@
+/* Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+/* Apply a basic box-sizing rule */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Set the base font size and family */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #ffffff;
+    text-align: center;
+    background-image: url(../images/Background1.1.png);
+    background-size: contain;
+    background-position-x: center;
+}
+
+/* Style the header */
+header {
+    background-color: #000000;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+header li {
+    float: left;
+    margin-left: 30px;
+}
+
+header ul li img {
+    width: 130px;
+    height: 50px;
+}
+
+.menu-list a {
+    margin-left: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Style the main content area */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.menu-list li a{
+    margin-left: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.menu-list li :hover {
+    background-color: #111111;
+}
+
+.text {
+    background-color: #fff;
+    color: #000000;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+.text p {
+    padding: 50px 50px;
+}
+/* Style the footer */
+footer {
+    margin-top: 150px;
+    background-color: #333333; /* Olive green */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 1px solid #fff;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+#social img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Make the site responsive */
+@media (max-width: 768px) {
+    main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
