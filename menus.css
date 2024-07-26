@@ -47,6 +47,20 @@ header li {
     margin-left: 30px;
 }
 
+header ul li img {
+    width: 130px;
+    height: 50px;
+}
+
+.menu-list a {
+    margin-left: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
 .menu-list li a{
     margin-left: 20px;
     display: block;
@@ -160,10 +174,16 @@ main {
     grid-column-end: 3;
 }
 
-#image {
-    margin-top: 50px;
-    width: 200px;
-    height: 150px;
+#steak img {
+    margin-top: 30px;
+    width: 550px;
+    height: 400px;
+}
+
+#mojito img{
+    margin-top: 30px;
+    width: 550px;
+    height: 470px;
 }
 
 /* Style the footer */
@@ -180,6 +200,11 @@ footer {
 
 footer p {
     margin: 0.5rem 0;
+}
+
+#social img {
+    width: 50px;
+    height: 50px;
 }
 
 /* Make the site responsive */

@@ -51,7 +51,12 @@ header li {
     margin-left: 30px;
 }
 
-.menu-list li a{
+header ul li img {
+    width: 130px;
+    height: 50px;
+}
+
+.menu-list a {
     margin-left: 20px;
     display: block;
     color: white;
@@ -60,7 +65,7 @@ header li {
     text-decoration: none;
 }
 
-.menu-list li :hover {
+.menu-list :hover {
     background-color: #111111;
 }
 
@@ -161,6 +166,11 @@ footer {
 
 footer p {
     margin: 0.5rem 0;
+}
+
+#social img {
+    width: 50px;
+    height: 50px;
 }
 
 /* Make the site responsive */
